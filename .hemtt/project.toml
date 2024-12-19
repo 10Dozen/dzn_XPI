@@ -1,0 +1,8 @@
+name = "dzn eXtended Pointer Interactions"
+prefix = "dzn_XPI"
+
+[properties]
+author = "10Dozen"
+
+[version]
+git_hash = 0

@@ -1,0 +1,11 @@
+"acc_flashlight",
+"acc_flashlight_L",
+"acc_flashlight_IRLW",
+"acc_flashlight_IRL",
+"acc_pointer_IR",
+"acc_pointer_V",
+"acc_pointer_IRILW",
+"acc_pointer_IRPIL",
+"acc_pointer_IRIL",
+"acc_pointer_IRxIRILW",
+"acc_pointer_IRxIRIL"
