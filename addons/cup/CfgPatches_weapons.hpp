@@ -127,6 +127,8 @@
 "CUP_acc_LLM_od_IRxIRILW",
 "CUP_acc_Zenit_2DS",
 "CUP_acc_Zenit_2DS_LW",
+"CUP_acc_Zenit_2DS_IRL",
+"CUP_acc_Zenit_2DS_IRLW",
 "CUP_acc_ANPEQ_2_Flashlight_Black_L",
 "CUP_acc_ANPEQ_2_Flashlight_Black_V",
 "CUP_acc_ANPEQ_2_Flashlight_Black_F",

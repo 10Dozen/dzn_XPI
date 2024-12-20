@@ -77,6 +77,7 @@ class XLSXReader:
                 continue
             raw_item_data[k] = self.mapping[k][v]
 
+
         # -- Compose data
         classname = raw_item_data["Class"]
         if raw_item_data["Suffix"]:
@@ -86,16 +87,16 @@ class XLSXReader:
         if raw_item_data["Pointer Setting"]:
             pointer = (
                 raw_item_data["Pointer Setting"],
-                raw_item_data["Pointer.Pos"],
-                raw_item_data["Pointer.Dir"]
+                self.mapping["Pointer.Pos"][raw_item_data["Pointer.PosDir"]],
+                self.mapping["Pointer.Dir"][raw_item_data["Pointer.PosDir"]],
             )
 
         flashlight: tuple[str] | None = None
         if raw_item_data["Flashlight Setting"]:
             flashlight = (
                 raw_item_data["Flashlight Setting"],
-                raw_item_data["Flashlight.Pos"],
-                raw_item_data["Flashlight.Dir"]
+                self.mapping["Flashlight.Pos"][raw_item_data["Flashlight.PosDir"]],
+                self.mapping["Flashlight.Dir"][raw_item_data["Flashlight.PosDir"]],
             )
 
         return ItemConfig(

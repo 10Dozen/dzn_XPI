@@ -67,6 +67,28 @@ class CfgWeapons
 	class ItemCore;
 	class InventoryFlashLightItem_Base_F;
 
+	class acc_pointer_IR;
+	class acc_flashlight;
+
+	class dzn_XPI_acc_DBAL_A3_base: acc_pointer_IR
+	{
+		scope=0;
+		displayName="DBAL-A3";
+		descriptionShort = "IR/Visual laser module";
+	};
+	class dzn_XPI_acc_flashlight_DualMode_base: acc_flashlight
+	{
+		scope=0;
+		displayName="Flashlight (VIS/IR)";
+		descriptionShort = "IR/Visual light flashlight";
+	};
+	class dzn_XPI_acc_flashlight_DualLense_base: acc_flashlight
+	{
+		scope=0;
+		displayName="Flashlight (Dual lense)";
+		descriptionShort = "Visual light flashlight";
+	};
+
     #include "CfgWeapons_items.hpp"
 };
 /*

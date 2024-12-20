@@ -23,6 +23,7 @@ class ItemConfig:
         self.parent_classname: str = parent_classname
         self.bundle: str = bundle
         self.scope = scope
+        self.scope_arsenal = scope if scope == 2 else 0
         self.type: str = item_type
         self.mode: str = mode
         self.asdg_type: int = asgd_type
@@ -62,6 +63,7 @@ class ItemConfig:
         return CONFIG_CLASS_TEMPLATE \
             .replace("$class", self.classname)     \
             .replace("$parent", self.parent_classname)   \
+            .replace("$scopeArsenal", str(self.scope_arsenal))     \
             .replace("$scope", str(self.scope))     \
             .replace("$flashlight", pointer_data)   \
             .replace("$pointer", flashlight_data)   \

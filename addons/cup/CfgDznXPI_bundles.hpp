@@ -230,6 +230,8 @@ class CUP_Zenit_2DS
 {
     CUP_acc_Zenit_2DS = 1;
     CUP_acc_Zenit_2DS_LW = 1;
+    CUP_acc_Zenit_2DS_IRL = 1;
+    CUP_acc_Zenit_2DS_IRLW = 1;
 };
 
 class CUP_ANPEQ2xFlashlight_Black

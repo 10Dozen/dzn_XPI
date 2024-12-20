@@ -2,8 +2,11 @@ import os
 from .item_config import ItemConfig
 from .constatns import \
     FILE_CFG_PATCHES_ITEMLIST, FILE_CFG_WEAPONS_CLASSES, \
-    FILE_CFG_DZN_XPI_BUNDLES, FILE_ASDG_RIFLE_ITEMS, FILE_ASDG_PISTOL_ITEMS, \
-    CONFIG_ENTRY, XPI_CFG_BUNDLE, ASDG_RIFLE_TYPE, ASDG_PISTOL_TYPE
+    FILE_CFG_DZN_XPI_BUNDLES, ASDG_TO_FILE, \
+    CONFIG_ENTRY, XPI_CFG_BUNDLE, \
+    ASDG_RIFLE_TYPE, ASDG_PISTOL_TYPE, ASDG_RHS_AK_BARREL, \
+    ASDG_RHS_AK_ZENITCO_FULL
+
 
 def __write_to_file(dirname: str, filename: str, content: str):
     '''Writes content to file at given dir. Creates dir if not exists'''
@@ -57,11 +60,13 @@ def export_cfg_dzn_xpi(items: list[ItemConfig], output_dir: str):
     )
 
 
-def export_asdg_rails(items: list[ItemConfig], output_dir: str):
+def export_asdg_rails(items: list[ItemConfig], output_dir: str, addon_name: str):
     '''Exports ASDG rails includes'''
     rails = {
         ASDG_RIFLE_TYPE: [],
-        ASDG_PISTOL_TYPE: []
+        ASDG_PISTOL_TYPE: [],
+        ASDG_RHS_AK_BARREL: [],
+        ASDG_RHS_AK_ZENITCO_FULL: [],
     }
     for item in items:
         entry = CONFIG_ENTRY.replace("$item", item.classname)
@@ -69,14 +74,8 @@ def export_asdg_rails(items: list[ItemConfig], output_dir: str):
             continue
         rails[item.asdg_type].append(entry)
 
-    __write_to_file(
-        output_dir,
-        FILE_ASDG_RIFLE_ITEMS,
-        "\n".join(rails[ASDG_RIFLE_TYPE])
-    )
-    __write_to_file(
-        output_dir,
-        FILE_ASDG_PISTOL_ITEMS,
-        "\n".join(rails[ASDG_PISTOL_TYPE])
-    )
+    for k, v in rails.items():
+        if ASDG_TO_FILE[k]["modSpecific"] and addon_name not in ASDG_TO_FILE[k]["modSpecific"]:
+            continue
 
+        __write_to_file(output_dir, ASDG_TO_FILE[k]["file"], "\n".join(v))

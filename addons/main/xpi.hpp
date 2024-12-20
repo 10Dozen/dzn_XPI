@@ -19,11 +19,12 @@
 #define XPI_M_IR_ILLUM_POINTER IRIlluminatorPointer
 
 // Pos and dir mem pointes names
+/*
 #define DIR_LASER "laser dir"
-#define DIR_FLASHLIGHT "flash"
-
 #define POS_LASER "laser pos"
+#define DIR_FLASHLIGHT "flash"
 #define POS_FLASHLIGHT "flash dir"
+*/
 
 // Config entries
 #include "xpi_rifle_laser.hpp"

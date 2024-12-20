@@ -1,0 +1,11 @@
+rhs_acc_2dpZenit_ris = 1;
+rhs_acc_2dpZenit_ris_LW = 1;
+rhs_acc_2dpZenit_ris_IRL = 1;
+rhs_acc_2dpZenit_ris_IRLW = 1;
+rhs_acc_perst3 = 1;
+rhs_acc_perst3_V = 1;
+rhs_acc_perst3_IRIL = 1;
+rhs_acc_perst3_IRILW = 1;
+rhs_acc_perst3_IRxIRIL = 1;
+rhs_acc_perst3_IRxIRILW = 1;
+rhs_acc_perst3_IRPIL = 1;
