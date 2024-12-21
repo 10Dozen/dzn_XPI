@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Project name="dzn_XPI">
+	<Package name="dzn_XPI_interaction">
+		<Container name="Keybinds">
+            <Key ID="STR_XPI_Keybinds_OpenMenu">
+                <Original>Open XPI menu</Original>
+                <Russian>Открыть меню XPI</Russian>
+            </Key>
+            <Key ID="STR_XPI_Keybinds_OpenMenu">
+                <Original>On hold pointer On/Off</Original>
+                <Russian>Вкл/выкл лазер при удержании</Russian>
+            </Key>
+        </Container>
+        <Container name="Settings">
+            <Key ID="STR_XPI_Settings_MenuScale">
+                <Original>Menu scale</Original>
+                <Russian>Масштаб меню</Russian>
+            </Key>
+
+            <Key ID="STR_XPI_Settings_MenuScale_Small">
+                <Original>Small</Original>
+                <Russian>Мелкое</Russian>
+            </Key>
+            <Key ID="STR_XPI_Settings_MenuScale_Normal">
+                <Original>Normal</Original>
+                <Russian>Обычное</Russian>
+            </Key>
+            <Key ID="STR_XPI_Settings_MenuScale_Large">
+                <Original>Large</Original>
+                <Russian>Крупное</Russian>
+            </Key>
+
+            <Key ID="STR_XPI_Settings_MenuPosition">
+                <Original>Menu position</Original>
+                <Russian>Положение меню</Russian>
+            </Key>
+
+            <Key ID="STR_XPI_Settings_MenuPosition_Left">
+                <Original>Left</Original>
+                <Russian>Слева</Russian>
+            </Key>
+            <Key ID="STR_XPI_Settings_MenuPosition_Center">
+                <Original>Center</Original>
+                <Russian>В центре</Russian>
+            </Key>
+            <Key ID="STR_XPI_Settings_MenuPosition_Right">
+                <Original>Right</Original>
+                <Russian>Справа</Russian>
+            </Key>
+        </Container>
+	</Package>
+</Project>

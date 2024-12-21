@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Project name="dzn_XPI">
+	<Package name="dzn_XPI_main">
+		<Container name="Modes">
+            <Key ID="STR_XPI_Modes_VisibleLaser">
+                <Original>Visible Laser</Original>
+                <Russian>Лазер</Russian>
+            </Key>
+            <Key ID="STR_XPI_Modes_VisibleLaser_x_FlashlightWide">
+                <Original>Visible Laser/Flashlight (CQB)</Original>
+                <Russian>Лазер/Фонарь (CQB)</Russian>
+            </Key>
+            <Key ID="STR_XPI_Modes_VisibleLaser_x_Flashlight">
+                <Original>Visible Laser/Flashlight</Original>
+                <Russian>Лазер/Фонарь</Russian>
+            </Key>
+            <Key ID="STR_XPI_Modes_FlashlightWide">
+                <Original>Flashlight (CQB)</Original>
+                <Russian>Фонарь (CQB)</Russian>
+            </Key>
+            <Key ID="STR_XPI_Modes_Flashlight">
+                <Original>Flashlight</Original>
+                <Russian>Фонарь</Russian>
+            </Key>
+
+            <Key ID="STR_XPI_Modes_IRLaser">
+                <Original>IR Laser</Original>
+                <Russian>ИК лазер</Russian>
+            </Key>
+            <Key ID="STR_XPI_Modes_IRLaser_x_IRIlluminatorWide">
+                <Original>IR Laser/IR Illuminator (CQB)</Original>
+                <Russian>ИК лазер/ИК иллюминатор (CQB)</Russian>
+            </Key>
+            <Key ID="STR_XPI_Modes_IRLaser_x_IRIlluminator">
+                <Original>IR Laser/IR Illuminator</Original>
+                <Russian>ИК лазер/ИК иллюминатор</Russian>
+            </Key>
+            <Key ID="STR_XPI_Modes_IRIlluminatorWide">
+                <Original>IR Illuminator (CQB)</Original>
+                <Russian>ИК иллюминатор (CQB)</Russian>
+            </Key>
+            <Key ID="STR_XPI_Modes_IRIlluminator">
+                <Original>IR Illuminator</Original>
+                <Russian>ИК иллюминатор</Russian>
+            </Key>
+            <Key ID="STR_XPI_Modes_IRFlashlightWide">
+                <Original>IR Flashlight (CQB)</Original>
+                <Russian>ИК фонарь (CQB)</Russian>
+            </Key>
+            <Key ID="STR_XPI_Modes_IRFlashlight">
+                <Original>IR Flashlight</Original>
+                <Russian>ИК фонарь</Russian>
+            </Key>
+            <Key ID="STR_XPI_Modes_IRIlluminatorPointer">
+                <Original>IR Illuminator (Pointer)</Original>
+                <Russian>ИК иллюминатор (указатель)</Russian>
+            </Key>
+        </Container>
+	</Package>
+</Project>

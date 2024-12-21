@@ -4,11 +4,15 @@
 [
     Q(GVAR(MenuScaleSetting)),
     "LIST",
-    "Menu scale",
+    localize "STR_XPI_Settings_MenuScale",
     TITLE,
     [
         [SETTING_SCALE_S, SETTING_SCALE_M, SETTING_SCALE_L],
-        ["Small", "Normal", "Large"],
+        [
+            localize "STR_XPI_Settings_MenuScale_Small",
+            localize "STR_XPI_Settings_MenuScale_Normal",
+            localize "STR_XPI_Settings_MenuScale_Large"
+        ],
         1
     ],
     2
@@ -17,11 +21,15 @@
 [
     Q(GVAR(MenuPositionSetting)),
     "LIST",
-    "Menu position",
+    localize "STR_XPI_Settings_MenuPosition",
     TITLE,
     [
         [SETTING_POS_LEFT, SETTING_POS_CENTER, SETTING_POS_RIGHT],
-        ["Left", "Center", "Right"],
+        [
+            localize "STR_XPI_Settings_MenuPosition_Left",
+            localize "STR_XPI_Settings_MenuPosition_Center",
+            localize "STR_XPI_Settings_MenuPosition_Right"
+        ],
         1
     ],
     2
@@ -32,8 +40,8 @@
 #include "\a3\ui_f\hpp\definedikcodes.inc"
 [
     TITLE,
-    "dzn_XIP_MenuKey",
-    "Open XIP menu",
+    "dzn_XPI_MenuKey",
+    localize "STR_XPI_Keybinds_OpenMenu",
     { COB call [F(openMenu)] },
     {},
     [DIK_L, [false, false, true]]
@@ -42,7 +50,7 @@
 [
     TITLE,
     "dzn_XIP_TempUseKey",
-    "Temporary Turn On/Off pointer",
+    localize "STR_XPI_Keybinds_OpenMenu",
     {
         private _player = call CBA_fnc_currentUnit;
         private _state = _player isFlashlightOn (currentWeapon _player) || _player isIRLaserOn (currentWeapon _player);

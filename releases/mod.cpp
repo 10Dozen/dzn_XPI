@@ -1,0 +1,10 @@
+name = "dzn eXtended Pointer Interactions";
+actionName = "WEBSITE";
+action = "";
+tooltip = "dzn eXtended Pointer Interactions";
+author = "10Dozen";
+overview = "dzn eXtended Pointer Interactions - Version 0.1.<br />Many pointer/flashlight modes with easy selection!";
+logo = "mod.paa";
+logoOver = "mod.paa";
+picture = "mod.paa";
+logoSmall = "z\dzn_XPI\main\ui\btn_Flashlight_ON.paa";

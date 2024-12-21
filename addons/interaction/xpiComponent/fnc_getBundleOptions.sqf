@@ -42,7 +42,6 @@ _visibleOptions resize [count Q(_visibleModes), []];
 
 private ["_options", "_modesMap"];
 {
-    diag_log format ["(getBundleOptions) Item: %1", _x];
     (_self call [F(getItemXPIConfig), [configName _x]]) params ["", "_type", "_mode"];
 
     _modesMap = _irModes;
@@ -51,9 +50,6 @@ private ["_options", "_modesMap"];
         _modesMap = _visibleModes;
         _options = _visibleOptions;
     };
-
-    diag_log format ["(getBundleOptions) _type=%1, _mode=%2", _type, _mode];
-    diag_log format ["(getBundleOptions) _fromModesMap=%1",(_modesMap get _mode)];
 
     (_modesMap get _mode) params ["_title", "_icons", "_order"];
     _options set [_order, [configName _x, _title, _icons]];

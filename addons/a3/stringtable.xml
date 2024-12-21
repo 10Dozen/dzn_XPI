@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Project name="dzn_XPI">
+	<Package name="dzn_XPI_a3">
+		<Container name="Weapons">
+            <Key ID="STR_XPI_Weapons_DBAL_A3">
+                <Original>DBAL-A3</Original>
+            </Key>
+            <Key ID="STR_XPI_Weapons_DBAL_A3_desc">
+                <Original>IR/Visual laser module</Original>
+                <Russian>ИК/видимый лазер</Russian>
+            </Key>
+
+
+            <Key ID="STR_XPI_Weapons_Flashlight_DualMode">
+                <Original>Flashlight (VIS/IR)</Original>
+                <Russian>Фонарь (видимый/ИК)</Russian>
+            </Key>
+            <Key ID="STR_XPI_Weapons_Flashlight_DualMode_desc">
+                <Original>IR/Visual light flashlight</Original>
+                <Russian>Двухрежмный фонарь видимого и ИК света</Russian>
+            </Key>
+
+            <Key ID="STR_XPI_Weapons_Flashlight_DualLense">
+                <Original>Flashlight (narrow/wide)</Original>
+                <Russian>Фонарь (узкий/широкий)</Russian>
+            </Key>
+            <Key ID="STR_XPI_Weapons_Flashlight_DualLense_desc">
+                <Original>Visual light flashlight with narrow and wide lense options</Original>
+                <Russian>Фонарь видимого света с обычным и широкоугольноым режимами</Russian>
+            </Key>
+        </Container>
+	</Package>
+</Project>

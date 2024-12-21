@@ -32,7 +32,6 @@ private _cob = createHashMapObject [[
     PREP_COMPONENT_FUNCTION(onButtonClick)
 ]];
 
-diag_log "(dzn_XPI_DialogComponent) Calling init";
 _cob call [F(init)];
 
 _cob

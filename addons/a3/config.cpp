@@ -73,20 +73,23 @@ class CfgWeapons
 	class dzn_XPI_acc_DBAL_A3_base: acc_pointer_IR
 	{
 		scope=0;
-		displayName="DBAL-A3";
-		descriptionShort = "IR/Visual laser module";
+		displayName="$STR_XPI_Weapons_DBAL_A3";
+		descriptionShort = "$STR_XPI_Weapons_DBAL_A3_desc";
+		author = "10Dozen";
 	};
 	class dzn_XPI_acc_flashlight_DualMode_base: acc_flashlight
 	{
 		scope=0;
-		displayName="Flashlight (VIS/IR)";
-		descriptionShort = "IR/Visual light flashlight";
+		displayName="$STR_XPI_Weapons_Flashlight_DualMode";
+		descriptionShort = "$STR_XPI_Weapons_Flashlight_DualMode_desc";
+		author = "10Dozen";
 	};
 	class dzn_XPI_acc_flashlight_DualLense_base: acc_flashlight
 	{
 		scope=0;
-		displayName="Flashlight (Dual lense)";
-		descriptionShort = "Visual light flashlight";
+		displayName="$STR_XPI_Weapons_Flashlight_DualLense";
+		descriptionShort = "$STR_XPI_Weapons_Flashlight_DualLense_desc";
+		author = "10Dozen";
 	};
 
     #include "CfgWeapons_items.hpp"
