@@ -1547,6 +1547,24 @@ class CUP_acc_LLM01_IRILW: CUP_acc_LLM01_L
     };
 };
 
+class CUP_acc_LLM01_IRxIRILW: CUP_acc_LLM01_L
+{
+    scope=1;
+    scopeArsenal=0;
+    class dzn_XPI
+    {
+        bundle="CUP_LLM01";
+        type=Q(XPI_T_IR);
+        mode=Q(XPI_M_IR_LASER_x_IR_ILLUM_W);
+    };
+
+    class ItemInfo: InventoryFlashLightItem_Base_F
+    {
+        RIFLE_LIGHT_IR_WIDE(flash dir,flash);
+        RIFLE_LASER_IR(laser pos,laser dir);
+    };
+};
+
 class CUP_acc_LLM01_desert_L: CUP_acc_LLM01_L
 {
     scope=2;
@@ -1634,6 +1652,24 @@ class CUP_acc_LLM01_desert_IRILW: CUP_acc_LLM01_desert_L
     {
         RIFLE_LIGHT_IR_WIDE(flash dir,flash);
         class Pointer {};
+    };
+};
+
+class CUP_acc_LLM01_desert_IRxIRILW: CUP_acc_LLM01_desert_L
+{
+    scope=1;
+    scopeArsenal=0;
+    class dzn_XPI
+    {
+        bundle="CUP_LLM01_desert";
+        type=Q(XPI_T_IR);
+        mode=Q(XPI_M_IR_LASER_x_IR_ILLUM_W);
+    };
+
+    class ItemInfo: InventoryFlashLightItem_Base_F
+    {
+        RIFLE_LIGHT_IR_WIDE(flash dir,flash);
+        RIFLE_LASER_IR(laser pos,laser dir);
     };
 };
 
@@ -1727,6 +1763,24 @@ class CUP_acc_LLM01_hex_IRILW: CUP_acc_LLM01_hex_L
     };
 };
 
+class CUP_acc_LLM01_hex_IRxIRILW: CUP_acc_LLM01_hex_L
+{
+    scope=1;
+    scopeArsenal=0;
+    class dzn_XPI
+    {
+        bundle="CUP_LLM01_hex";
+        type=Q(XPI_T_IR);
+        mode=Q(XPI_M_IR_LASER_x_IR_ILLUM_W);
+    };
+
+    class ItemInfo: InventoryFlashLightItem_Base_F
+    {
+        RIFLE_LIGHT_IR_WIDE(flash dir,flash);
+        RIFLE_LASER_IR(laser pos,laser dir);
+    };
+};
+
 class CUP_acc_LLM01_od_L: CUP_acc_LLM01_L
 {
     scope=2;
@@ -1817,6 +1871,24 @@ class CUP_acc_LLM01_od_IRILW: CUP_acc_LLM01_od_L
     };
 };
 
+class CUP_acc_LLM01_od_IRxIRILW: CUP_acc_LLM01_od_L
+{
+    scope=1;
+    scopeArsenal=0;
+    class dzn_XPI
+    {
+        bundle="CUP_LLM01_od";
+        type=Q(XPI_T_IR);
+        mode=Q(XPI_M_IR_LASER_x_IR_ILLUM_W);
+    };
+
+    class ItemInfo: InventoryFlashLightItem_Base_F
+    {
+        RIFLE_LIGHT_IR_WIDE(flash dir,flash);
+        RIFLE_LASER_IR(laser pos,laser dir);
+    };
+};
+
 class CUP_acc_LLM01_coyote_L: CUP_acc_LLM01_L
 {
     scope=2;
@@ -1904,6 +1976,24 @@ class CUP_acc_LLM01_coyote_IRILW: CUP_acc_LLM01_coyote_L
     {
         RIFLE_LIGHT_IR_WIDE(flash dir,flash);
         class Pointer {};
+    };
+};
+
+class CUP_acc_LLM01_coyote_IRxIRILW: CUP_acc_LLM01_coyote_L
+{
+    scope=1;
+    scopeArsenal=0;
+    class dzn_XPI
+    {
+        bundle="CUP_LLM01_coyote";
+        type=Q(XPI_T_IR);
+        mode=Q(XPI_M_IR_LASER_x_IR_ILLUM_W);
+    };
+
+    class ItemInfo: InventoryFlashLightItem_Base_F
+    {
+        RIFLE_LIGHT_IR_WIDE(flash dir,flash);
+        RIFLE_LASER_IR(laser pos,laser dir);
     };
 };
 
@@ -2033,6 +2123,24 @@ class CUP_acc_LLM_IRxIRILW: CUP_acc_LLM
     };
 };
 
+class CUP_acc_LLM_VxL: CUP_acc_LLM
+{
+    scope=1;
+    scopeArsenal=0;
+    class dzn_XPI
+    {
+        bundle="CUP_LLM3";
+        type=Q(XPI_T_VISIBLE);
+        mode=Q(XPI_M_VISIBLE_LASER_x_LIGTH);
+    };
+
+    class ItemInfo: InventoryFlashLightItem_Base_F
+    {
+        RIFLE_LIGHT_NARROW(flash dir,flash);
+        RIFLE_LASER_VISIBLE_GREEN(laser pos,laser dir);
+    };
+};
+
 class CUP_acc_LLM_black: CUP_acc_LLM
 {
     scope=2;
@@ -2159,6 +2267,24 @@ class CUP_acc_LLM_black_IRxIRILW: CUP_acc_LLM_black
     };
 };
 
+class CUP_acc_LLM_black_VxL: CUP_acc_LLM_black
+{
+    scope=1;
+    scopeArsenal=0;
+    class dzn_XPI
+    {
+        bundle="CUP_LLM3_black";
+        type=Q(XPI_T_VISIBLE);
+        mode=Q(XPI_M_VISIBLE_LASER_x_LIGTH);
+    };
+
+    class ItemInfo: InventoryFlashLightItem_Base_F
+    {
+        RIFLE_LIGHT_NARROW(flash dir,flash);
+        RIFLE_LASER_VISIBLE_GREEN(laser pos,laser dir);
+    };
+};
+
 class CUP_acc_LLM_od: CUP_acc_LLM
 {
     scope=2;
@@ -2282,6 +2408,24 @@ class CUP_acc_LLM_od_IRxIRILW: CUP_acc_LLM_od
     {
         RIFLE_LIGHT_IR_WIDE(flash dir,flash);
         RIFLE_LASER_IR(laser pos,laser dir);
+    };
+};
+
+class CUP_acc_LLM_od_VxL: CUP_acc_LLM_od
+{
+    scope=1;
+    scopeArsenal=0;
+    class dzn_XPI
+    {
+        bundle="CUP_LLM3_OD";
+        type=Q(XPI_T_VISIBLE);
+        mode=Q(XPI_M_VISIBLE_LASER_x_LIGTH);
+    };
+
+    class ItemInfo: InventoryFlashLightItem_Base_F
+    {
+        RIFLE_LIGHT_NARROW(flash dir,flash);
+        RIFLE_LASER_VISIBLE_GREEN(laser pos,laser dir);
     };
 };
 
@@ -3974,5 +4118,203 @@ class CUP_acc_ANPEQ_15_Top_Flashlight_Black_IRPIL: CUP_acc_ANPEQ_15_Top_Flashlig
     {
         RIFLE_LIGHT_IR_FAR_ILLUM(laser pos,laser dir);
         class Pointer {};
+    };
+};
+
+class CUP_acc_CZ_M3X: CUP_acc_Flashlight
+{
+    scope=2;
+    scopeArsenal=2;
+    class dzn_XPI
+    {
+        bundle="CUP_CZ_M3X";
+        type=Q(XPI_T_VISIBLE);
+        mode=Q(XPI_M_LIGHT_W);
+    };
+
+    class ItemInfo: InventoryFlashLightItem_Base_F
+    {
+        PISTOL_LIGHT_WIDE(flash dir,flash);
+        class Pointer {};
+    };
+};
+
+class CUP_acc_CZ_M3X_L: CUP_acc_CZ_M3X
+{
+    scope=1;
+    scopeArsenal=0;
+    class dzn_XPI
+    {
+        bundle="CUP_CZ_M3X";
+        type=Q(XPI_T_IR);
+        mode=Q(XPI_M_IR_LASER);
+    };
+
+    class ItemInfo: InventoryFlashLightItem_Base_F
+    {
+        class FlashLight {};
+        RIFLE_LASER_IR(laser pos,laser dir);
+    };
+};
+
+class CUP_acc_CZ_M3X_V: CUP_acc_CZ_M3X
+{
+    scope=1;
+    scopeArsenal=0;
+    class dzn_XPI
+    {
+        bundle="CUP_CZ_M3X";
+        type=Q(XPI_T_VISIBLE);
+        mode=Q(XPI_M_VISIBLE_LASER);
+    };
+
+    class ItemInfo: InventoryFlashLightItem_Base_F
+    {
+        class FlashLight {};
+        RIFLE_LASER_VISIBLE_RED(laser pos,laser dir);
+    };
+};
+
+class CUP_acc_CZ_M3X_VxL: CUP_acc_CZ_M3X
+{
+    scope=1;
+    scopeArsenal=0;
+    class dzn_XPI
+    {
+        bundle="CUP_CZ_M3X";
+        type=Q(XPI_T_VISIBLE);
+        mode=Q(XPI_M_VISIBLE_LASER_x_LIGTH_WIDE);
+    };
+
+    class ItemInfo: InventoryFlashLightItem_Base_F
+    {
+        PISTOL_LIGHT_WIDE(flash dir,flash);
+        RIFLE_LASER_VISIBLE_RED(laser pos,laser dir);
+    };
+};
+
+class CUP_acc_MLPLS_Laser: ItemCore
+{
+    scope=2;
+    scopeArsenal=2;
+    class dzn_XPI
+    {
+        bundle="CUP_MLPLS";
+        type=Q(XPI_T_IR);
+        mode=Q(XPI_M_IR_LASER);
+    };
+
+    class ItemInfo: InventoryFlashLightItem_Base_F
+    {
+        class FlashLight {};
+        RIFLE_LASER_IR(laser pos,laser dir);
+    };
+};
+
+class CUP_acc_MLPLS_Laser_V: CUP_acc_MLPLS_Laser
+{
+    scope=1;
+    scopeArsenal=0;
+    class dzn_XPI
+    {
+        bundle="CUP_MLPLS";
+        type=Q(XPI_T_VISIBLE);
+        mode=Q(XPI_M_VISIBLE_LASER);
+    };
+
+    class ItemInfo: InventoryFlashLightItem_Base_F
+    {
+        class FlashLight {};
+        RIFLE_LASER_VISIBLE_GREEN(laser pos,laser dir);
+    };
+};
+
+class CUP_acc_SF_XC1: ItemCore
+{
+    scope=2;
+    scopeArsenal=2;
+    class dzn_XPI
+    {
+        bundle="CUP_SurefireXC1";
+        type=Q(XPI_T_VISIBLE);
+        mode=Q(XPI_M_LIGHT_W);
+    };
+
+    class ItemInfo: InventoryFlashLightItem_Base_F
+    {
+        PISTOL_LIGHT_WIDE(flash dir,flash);
+        class Pointer {};
+    };
+};
+
+class CUP_acc_Glock17_Flashlight: ItemCore
+{
+    scope=2;
+    scopeArsenal=2;
+    class dzn_XPI
+    {
+        bundle="CUP_GlockTacticalLight";
+        type=Q(XPI_T_VISIBLE);
+        mode=Q(XPI_M_LIGHT_W);
+    };
+
+    class ItemInfo: InventoryFlashLightItem_Base_F
+    {
+        PISTOL_LIGHT_WIDE(flash dir,flash);
+        class Pointer {};
+    };
+};
+
+class CUP_acc_Glock17_L: CUP_acc_Glock17_Flashlight
+{
+    scope=1;
+    scopeArsenal=0;
+    class dzn_XPI
+    {
+        bundle="CUP_GlockTacticalLight";
+        type=Q(XPI_T_IR);
+        mode=Q(XPI_M_IR_LASER);
+    };
+
+    class ItemInfo: InventoryFlashLightItem_Base_F
+    {
+        class FlashLight {};
+        RIFLE_LASER_IR(laser pos,laser dir);
+    };
+};
+
+class CUP_acc_Glock17_V: CUP_acc_Glock17_Flashlight
+{
+    scope=1;
+    scopeArsenal=0;
+    class dzn_XPI
+    {
+        bundle="CUP_GlockTacticalLight";
+        type=Q(XPI_T_VISIBLE);
+        mode=Q(XPI_M_VISIBLE_LASER);
+    };
+
+    class ItemInfo: InventoryFlashLightItem_Base_F
+    {
+        class FlashLight {};
+        RIFLE_LASER_VISIBLE_GREEN(laser pos,laser dir);
+    };
+};
+
+class CUP_acc_Glock17_VxL: CUP_acc_Glock17_Flashlight
+{
+    scope=1;
+    scopeArsenal=0;
+    class dzn_XPI
+    {
+        bundle="CUP_GlockTacticalLight";
+        type=Q(XPI_T_VISIBLE);
+        mode=Q(XPI_M_VISIBLE_LASER_x_LIGTH_WIDE);
+    };
+
+    class ItemInfo: InventoryFlashLightItem_Base_F
+    {
+        PISTOL_LIGHT_WIDE(flash dir,flash);
+        RIFLE_LASER_VISIBLE_GREEN(laser pos,laser dir);
     };
 };

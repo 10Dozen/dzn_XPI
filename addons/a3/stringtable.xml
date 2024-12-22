@@ -28,6 +28,15 @@
                 <Original>Visual light flashlight with narrow and wide lense options</Original>
                 <Russian>Фонарь видимого света с обычным и широкоугольноым режимами</Russian>
             </Key>
+
+            <Key ID="STR_XPI_Weapons_PistolFlashlight">
+                <Original>Pistol Flashlight</Original>
+                <Russian>Пистолетный фонарь</Russian>
+            </Key>
+            <Key ID="STR_XPI_Weapons_PistolFlashlight_desc">
+                <Original>Handgun mounted visual light flashlight</Original>
+                <Russian>Пистолетный фонарь видимого света</Russian>
+            </Key>
         </Container>
 	</Package>
 </Project>

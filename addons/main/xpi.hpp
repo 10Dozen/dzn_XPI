@@ -29,3 +29,4 @@
 // Config entries
 #include "xpi_rifle_laser.hpp"
 #include "xpi_rifle_light.hpp"
+#include "xpi_pistol_light.hpp"

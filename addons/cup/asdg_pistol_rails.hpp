@@ -1,0 +1,9 @@
+CUP_acc_CZ_M3X = 1;
+CUP_acc_CZ_M3X_L = 1;
+CUP_acc_CZ_M3X_V = 1;
+CUP_acc_CZ_M3X_VxL = 1;
+CUP_acc_MLPLS_Laser = 1;
+CUP_acc_MLPLS_Laser_V = 1;
+CUP_acc_SF_XC1 = 1;
+CUP_acc_Glock17_Flashlight = 1;
+CUP_acc_Glock17_VxL = 1;

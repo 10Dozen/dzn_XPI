@@ -50,15 +50,23 @@
 [
     TITLE,
     "dzn_XIP_TempUseKey",
-    localize "STR_XPI_Keybinds_OpenMenu",
+    localize "STR_XPI_Keybinds_OnHoldToggle",
     {
         private _player = call CBA_fnc_currentUnit;
-        private _state = _player isFlashlightOn (currentWeapon _player) || _player isIRLaserOn (currentWeapon _player);
+        if !(_player call CBA_fnc_canUseWeapon) exitWith {};
+
+        (COB call [F(getCurrentWeaponInfo), [_player]]) params [
+            "_currentWeapon", "", "_weaponType"
+        ];
+        if (_weaponType != WEAPON_TYPE_PRIMARY) exitWith {};
+
+        private _state = _player isFlashlightOn _currentWeapon || _player isIRLaserOn _currentWeapon;
         _player setVariable [Q(GVAR(TempState)), _state];
         COB call [F(setPointerState), [_player, !_state]];
     },
     {
         private _player = call CBA_fnc_currentUnit;
+        if !(_player call CBA_fnc_canUseWeapon) exitWith {};
         COB call [
             F(setPointerState),
             [_player, _player getVariable [Q(GVAR(TempState)), false]]

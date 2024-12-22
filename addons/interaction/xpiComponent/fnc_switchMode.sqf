@@ -37,8 +37,8 @@ if (_weaponType == WEAPON_TYPE_PRIMARY) exitWith {
     [{
         params ["_player", "_switchToClass", "_pointerState"];
         _player addPrimaryWeaponItem _switchToClass;
-        COB call [F(setPointerState), [_player, _pointerState]];
-    }, [_player, _switchToClass,_pointerState]] call CBA_fnc_execNextFrame;
+        COB call [F(setPointerState), [_player, _pointerState, false]];
+    }, [_player, _switchToClass, _pointerState]] call CBA_fnc_execNextFrame;
 };
 
 // -- Secondary weapon items
@@ -47,8 +47,8 @@ if (_weaponType == WEAPON_TYPE_SECONDARY) exitWith {
     [{
         params ["_player", "_switchToClass", "_pointerState"];
         _player addSecondaryWeaponItem _switchToClass;
-        COB call [F(setPointerState), [_player, _pointerState]];
-    }, [_player, _switchToClass, _irLaserState || _gunLightState]] call CBA_fnc_execNextFrame;
+        // COB call [F(setPointerState), [_player, _pointerState, true]];
+    }, [_player, _switchToClass, _pointerState]] call CBA_fnc_execNextFrame;
 };
 
 // -- Handgun item
@@ -56,5 +56,5 @@ _player removeHandgunItem _itemToRemove;
 [{
     params ["_player", "_switchToClass", "_pointerState"];
     _player addHandgunItem _switchToClass;
-    COB call [F(setPointerState), [_player, _pointerState]];
-}, [_player, _switchToClass, _irLaserState || _gunLightState]] call CBA_fnc_execNextFrame;
+    // COB call [F(setPointerState), [_player, _pointerState, true]];
+}, [_player, _switchToClass, _pointerState]] call CBA_fnc_execNextFrame;

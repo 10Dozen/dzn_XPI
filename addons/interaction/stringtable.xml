@@ -6,7 +6,7 @@
                 <Original>Open XPI menu</Original>
                 <Russian>Открыть меню XPI</Russian>
             </Key>
-            <Key ID="STR_XPI_Keybinds_OpenMenu">
+            <Key ID="STR_XPI_Keybinds_OnHoldToggle">
                 <Original>On hold pointer On/Off</Original>
                 <Russian>Вкл/выкл лазер при удержании</Russian>
             </Key>

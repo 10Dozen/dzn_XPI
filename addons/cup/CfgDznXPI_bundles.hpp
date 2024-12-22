@@ -155,6 +155,7 @@ class CUP_LLM01
     CUP_acc_LLM01_F = 1;
     CUP_acc_LLM01_VxLW = 1;
     CUP_acc_LLM01_IRILW = 1;
+    CUP_acc_LLM01_IRxIRILW = 1;
 };
 
 class CUP_LLM01_desert
@@ -164,6 +165,7 @@ class CUP_LLM01_desert
     CUP_acc_LLM01_desert_F = 1;
     CUP_acc_LLM01_desert_VxLW = 1;
     CUP_acc_LLM01_desert_IRILW = 1;
+    CUP_acc_LLM01_desert_IRxIRILW = 1;
 };
 
 class CUP_LLM01_hex
@@ -173,6 +175,7 @@ class CUP_LLM01_hex
     CUP_acc_LLM01_hex_F = 1;
     CUP_acc_LLM01_hex_VxLW = 1;
     CUP_acc_LLM01_hex_IRILW = 1;
+    CUP_acc_LLM01_hex_IRxIRILW = 1;
 };
 
 class CUP_LLM01_od
@@ -182,6 +185,7 @@ class CUP_LLM01_od
     CUP_acc_LLM01_od_F = 1;
     CUP_acc_LLM01_od_VxLW = 1;
     CUP_acc_LLM01_od_IRILW = 1;
+    CUP_acc_LLM01_od_IRxIRILW = 1;
 };
 
 class CUP_LLM01_coyote
@@ -191,6 +195,7 @@ class CUP_LLM01_coyote
     CUP_acc_LLM01_coyote_F = 1;
     CUP_acc_LLM01_coyote_VxLW = 1;
     CUP_acc_LLM01_coyote_IRILW = 1;
+    CUP_acc_LLM01_coyote_IRxIRILW = 1;
 };
 
 class CUP_LLM3
@@ -202,6 +207,7 @@ class CUP_LLM3
     CUP_acc_LLM_VxLW = 1;
     CUP_acc_LLM_IRLW = 1;
     CUP_acc_LLM_IRxIRILW = 1;
+    CUP_acc_LLM_VxL = 1;
 };
 
 class CUP_LLM3_black
@@ -213,6 +219,7 @@ class CUP_LLM3_black
     CUP_acc_LLM_black_VxLW = 1;
     CUP_acc_LLM_black_IRLW = 1;
     CUP_acc_LLM_black_IRxIRILW = 1;
+    CUP_acc_LLM_black_VxL = 1;
 };
 
 class CUP_LLM3_OD
@@ -224,6 +231,7 @@ class CUP_LLM3_OD
     CUP_acc_LLM_od_VxLW = 1;
     CUP_acc_LLM_od_IRLW = 1;
     CUP_acc_LLM_od_IRxIRILW = 1;
+    CUP_acc_LLM_od_VxL = 1;
 };
 
 class CUP_Zenit_2DS
@@ -358,4 +366,31 @@ class CUP_ANPEQ15_TOPxFlashlight_Black
     CUP_acc_ANPEQ_15_Top_Flashlight_Black_IRxIRILW = 1;
     CUP_acc_ANPEQ_15_Top_Flashlight_Black_IRxIRIL = 1;
     CUP_acc_ANPEQ_15_Top_Flashlight_Black_IRPIL = 1;
+};
+
+class CUP_CZ_M3X
+{
+    CUP_acc_CZ_M3X = 1;
+    CUP_acc_CZ_M3X_L = 1;
+    CUP_acc_CZ_M3X_V = 1;
+    CUP_acc_CZ_M3X_VxL = 1;
+};
+
+class CUP_MLPLS
+{
+    CUP_acc_MLPLS_Laser = 1;
+    CUP_acc_MLPLS_Laser_V = 1;
+};
+
+class CUP_SurefireXC1
+{
+    CUP_acc_SF_XC1 = 1;
+};
+
+class CUP_GlockTacticalLight
+{
+    CUP_acc_Glock17_Flashlight = 1;
+    CUP_acc_Glock17_L = 1;
+    CUP_acc_Glock17_V = 1;
+    CUP_acc_Glock17_VxL = 1;
 };
